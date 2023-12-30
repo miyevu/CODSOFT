@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Benne&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.nav-links ul a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+header nav{
+    background-color: #000000;
+    height: 80px;
+    width: 100%;
+    color: white;
+}
+nav label {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+nav .logo-link {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+}
+nav ul {
+    float: right;
+    margin-right: 70px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+nav ul a.active,nav ul a:hover {
+    color: #0000F8;
+    transition: .5s;
+}
+main .home{
+    background-image: url(images/Background.png);
+    background-size: cover;
+}
+.nav-links{
+    position: fixed;
+    z-index: 10000;
+}
+.home h2{
+    color: #010134;
+}
+
+
+/* Pages outline */
+.header-title{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;        
+    box-sizing: border-box;
+    width: 100px;
+}
+.my-projects{
+    background-color: #E6E6FD;
+}
+
+.contact-me{
+    background-color: #D1D1FF;
+}
+
+.home,
+.about-me,
+.my-projects,
+.contact-me{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* First page */
+.home{
+    background-color: #F2F2FF;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.intro-pic{
+    height: 660px;
+    width: auto;
+    margin-right: 70px;
+    margin-top: 37px;
+    padding-top: 50px;
+    transform: scaleX(-1);
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 150px 0 0 100px;
+}
+.my-intro{
+    font-size: 18px;
+    text-align: left;
+}
+.intro h2{
+    font-size: 72px;
+    margin-left: 0;
+    line-height: 0.9;
+    font-weight: 900;
+}
+.let-connect {
+    background-color: #00007C;
+    color: #FFFFFF;
+    padding: 6px 9px;
+    border: none;
+    font-size: 16px;
+    margin: 20px 0 15px 0;
+}
+.social-logo {
+    height: 20px;
+}
+/* About me page */
+.about-me{
+    background-image: url(/images/about-back.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    text-wrap: wrap;
+}
+.about-pic{
+    width: auto;
+    height: 600px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+.about-par{
+    text-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 200px;
+    padding-right: 180px;
+}
+.about-par h3{
+    font-size: 60px;
+    margin-bottom:0px;
+    color: #010134;
+}
+.about-par p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.contact-me-button{
+    background-color: #00007C;
+    color: wheat;
+    padding: 8px 16px;
+    border: none;
+    font-size: 16px;
+}
+.contact-me-button:hover,
+.let-connect:hover{
+    cursor: pointer;
+}
+.underline{
+    border: #010134 solid;
+    margin-bottom:70px;
+    width: 180px;
+    margin-left: 100px;
+    border-width: 2px;
+}
+/* contact page */
+.contact-me{
+    background-image: url(/images/contact-back.png);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.contact-me .c-info{
+    margin-top: 80px;
+}
+.c-info h3{
+    font-size: 60px;
+    color: #010134; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.u-underline{
+    text-decoration: underline;
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+.number{
+    
+}
