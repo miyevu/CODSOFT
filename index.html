@@ -7,6 +7,7 @@
         <meta property="og:image" content="More info about me"/>
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="my-js.js" defer></script>
         <title>Keklem | Full stack developer</title>
@@ -15,10 +16,10 @@
         <!-- Navigation bar -->
         <header class="header-title">
             <nav class="nav-links container">
-                <!-- <input type="checkbox"> -->
                 <label class="logo">
                     <a href="#" class="logo-link"><span>KLY</span></a>
                 </label>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
                 <ul class="nav-items">
                     <li>
                         <a href="#home">Home</a>
@@ -39,62 +40,112 @@
         <main>
             <!-- My title page -->
             <section class="home" id="home">
+                <div class="mypic">
+                    <img src="images/kek1.png" class="intro-pic">
+                </div>
                 <div class="intro">
                     <span class="my-intro">Hi, I am Keklem Yevudza</span>
-                    <h2 class="title">FULLSTACK <br> DEVELOPER</h2>
+                    <h2 class="title">FRONTEND <br> DEVELOPER</h2>
                     <div>
-                        <button class="let-connect">Let's connect</button>
+                        <a target="_blank" href="https://docs.google.com/document/d/11DHOpboBaVnpnzWs6N22Q48ffO-u9YSi/edit?usp=drivesdk&ouid=103016555129104258740&rtpof=true&sd=true">
+                            <button class="let-connect">Download CV</button>
+                        </a>
                     </div>
                     <div class="social-logo">
                         <!-- Put the links here and clear the comment -->
-                        <a class="social linkedin" href="">
+                        <a class="social linkedin" target="_blank" href="https://www.linkedin.com/in/lawrence-keklem-1527a223a">
                             <img src="images/LinkedIn.png" class="social-logo" alt="linkedIn">
                         </a>
-                        <a class="social Twitter-X" href="">
+                        <a class="social Twitter-X" target="_blank" href="https://twitter.com/kerk_les">
                             <img src="images/Twitter.png" class="social-logo" alt="Twitter">
                         </a>
-                        <a class="social discord" href="">
+                        <a class="social discord" target="_blank" href="discordapp.com/users/873889600207220767">
                             <img src="images/Discord.png" class="social-logo" alt="Discord">
                         </a>
                     </div>
-                </div>
-                <div class="mypic">
-                    <!-- Put my pic here and clear comment -->
-                    <img src="images/kek1.png" class="intro-pic">
                 </div>
             </section>
             <!-- About me page -->
             <section class="about-me" id="about-me">
                 <div>
-                    <!-- Add my picture for the about me page -->
                     <img src="/images/kek2.png" alt="keklem" class="about-pic">
                 </div>
                 <div class="about-par">
                     <h3>Ab<span class="u-underline">out Me</span></h3>
-                    <!-- <div class="underline"></div> -->
                     <p>
-                        My name is Yevudza Lawrence Keklem.<br> I am a fullstack web developer 
+                        My name is Yevudza Lawrence Keklem. I am a fullstack web developer 
                         who is dedicated to providing you with the best website or app you 
                         wish to create. Don’t hesitate to reach out to me for I am willing 
                         to work with you.
                     </p>
-                    <button class="contact-me-button">Contact Me</button>
+                    <a href="#contact-me">
+                        <button class="contact-me-button">Contact Me</button>
+                    </a>
                 </div>
             </section>
             <!-- My projects page -->
             <section class="my-projects" id="my-projects">
+                <h3><span class="u-underline">My Pro</span>jects</h3>
                 <div class="projects">
-                    <h3>My Projects</h3>
-                    <!-- Add images for the projects -->
-                    <div>
-                        <img src="">
+                    <div class="project one">
+                        <img src="/images/Book-library.png" class="project_img">
                         <p>
-                            Team Portfolio
+                           Book Library 
                         </p>
+                        <div>
+                            <a href="#contact-me" class="click-me github_">Github</a>
+                            <a href="https://drive.google.com/file/d/1gJ4WGxrW9s8m2T8Ick00La4VSiemyEK9/view?usp=sharing" target="_blank" class="demo">Demo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project two">
+                        <img src="/images/quiz-app.png" class="project_img">
                         <p>
                             Quiz App
                         </p>
+                        <div>
+                            <a href="#contact-me" class="click-me github_">
+                                Github
+                            </a>
+                            <a href="#" target="_blank" class="demo">
+                                Demo
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="project three">    <img src="/images/Book-library.png" class="project_img">
+                        <p>
+                            Group Portfolio
+                        </p>
+                        <div>
+                            <a href="#contact-me" class="click-me github_">
+                                Github
+                            </a>
+                            <a href="https://kibo-web-dev-fundamentals-july-23.github.io/terminators/index.html" class="demo">
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project three">    <img src="/images/Book-library.png" class="project_img">
+                        <p>
+                            Project 4
+                        </p>
+                        <div>
+                            <a href="#" class="github_">Github</a>
+                            <a href="#" class="demo">Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project three">    <img src="/images/Book-library.png" class="project_img">
+                        <p>
+                            Project 5
+                        </p>
+                        <div>
+                            <a href="#" class="github_">Github</a>
+                            <a href="#" class="demo">Demo</a>
+                        </div>
+                    </div> -->
                 </div>
             </section>
             <section class="contact-me" id="contact-me">
@@ -103,32 +154,44 @@
                         <span class="u-underline">Conta</span>ct
                     </h3>
                     <div class="contact-content">
-                        <div class="contact-details">
-                            <h6 class="number">
-                                Number
-                            </h6>
-                            <p>
-                                +233 59 421 4922
-                            </p>
-                            <h6 class="email">
-                                Email
-                            </h6>
-                            <p>
-                                keklemyevu@gmail.com
-                            </p>
+                        <div class="half contact-details">
+                            <div class="contact number">
+                                <h6 class="number">
+                                    Number
+                                </h6>
+                                <p>
+                                    +233 59 421 4922
+                                </p>
+                            </div>
+                            <div class="contact email">
+                                <h6 class="email">
+                                    Email
+                                </h6>
+                                <p>
+                                    keklemyevu@gmail.com
+                                </p>
+                            </div>
                         </div>
                         <!-- Complete the forms here -->
-                        <div class="form" id="form">
-                            <!-- The action method for the form -->
-                            <form class="sendEmail" method="post" action="send-message">
-                                <input type="text" label="Name" id="name" placeholder="Name" required>
-                                <input type="email" label="Email" id="email" placeholder="Email" required>
-                                <br>
-                                <input type="text" label="Subject" id="subject" placeholder="Subject" required>
-                                <br>
-                                <input type="message" label="Message" id="message" placeholder="Message" required>
-                                <br>
-                                <input type="submit" value="Submit" id="submit-button" required>
+                        <div class="half form" id="form">
+                            <form action="https://formsubmit.co/keklemyevu@gmail.com" method="POST" class="sendEmail">
+                                <div class="form-group name email">
+                                    <input type="text" id="name" placeholder="Name" name="Name" required>
+
+                                    <input type="email" id="email" placeholder="Email" name="Email" required>
+                                </div>
+
+                                <div class="form-group nsubject">
+                                    <input type="text"  id="subject" placeholder="Subject" name="Subject" required>
+                                </div>
+
+                                <div class="form-group subject">
+                                    <textarea type="message"  id="message" placeholder="Message" name="Message" required></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit" value="Submit" id="submit-button">Send</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -136,13 +199,17 @@
             </section>
         </main>
         <footer>
-            <div class="my-logo">
-                KLY
+            <div class="footer-social">
+                <a href="#"><img src="/images/Github.png"></a>
+
+                <a href="#"><img src="/images/Twitter-white.png"></a>
+
+                <a href="#"><img src="/images/WhatsApp.png"></a>
             </div>
-            <div class="footer-icons">
-                <!-- ig, linkedin, twitter-x, discord, whatsapp, github -->
+            <div>
+                <p>&copy KLY2024</p>
             </div>
-            <p>Kerk2023</p>
         </footer>
+        <script src="script.js" defer></script>
     </body>
 </html>
