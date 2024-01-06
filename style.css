@@ -55,7 +55,7 @@ nav{
 .about-me,
 .my-projects,
 .contact-me{
-    height: auto;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -376,6 +376,13 @@ footer{
 
 /* Responsive styles using media queries */
 @media (max-width: 767px) {
+    .home,
+    .about-me,
+    .my-projects,
+    .contact-me{
+        height: auto;
+    }
+
     .intro-pic {
         display: none; /* Hide the image for screens up to 767px width */
     }
