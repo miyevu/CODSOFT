@@ -55,7 +55,7 @@ nav{
 .about-me,
 .my-projects,
 .contact-me{
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
