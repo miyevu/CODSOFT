@@ -4,6 +4,9 @@
     padding: 0;
     text-decoration: none;
 }
+section {
+    height: 100vh;
+}
 html{
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
